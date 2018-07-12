@@ -12,7 +12,7 @@ margin: 0;
     border: 1px solid black;
     height:100%;
     width:100%;
-    background-image: url("/Users/mac/Desktop/WebDesign/html/img/dsktop.png");
+    background-image: url('../img/dsktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -26,7 +26,7 @@ margin: 0;
 .topnav {
     overflow: hidden;
     background-color: #333;
-    opacity: 0.8;
+    opacity: 0.85;
 
     transition: all 0.5s;
     cursor: pointer;
@@ -57,26 +57,142 @@ margin: 0;
 }
 
 
-.topnav a:hover span:after {
+a[target=hm]:hover span:after {
 
-  content: url(/Users/mac/Desktop/WebDesign/html/img/lt/white-t.png);
-  background-color: black;
-  width:3%;
-  height: 3%;
+  content: url('../img/lt/white-t.png');
+  zoom: 2.5%;
   top: 9.09%*0.5;
   margin-right:10%;
-  opacity: 0;
-  position: absolute;
-  transition: 0.5s;
-
-}
-
-
-.topnav a:hover span:after {
   opacity: 1;
   right: 0;
+  position: absolute;
 }
 
+a[target=dn]:hover span:after {
+
+  content: url('../img/lt/cyan-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=ar]:hover span:after {
+
+  content: url('../img/lt/pink-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=bw]:hover span:after {
+
+  content: url('../img/lt/blue-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=am]:hover span:after {
+
+  content: url('../img/lt/green-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=fp]:hover span:after {
+
+  content: url('../img/lt/yellow-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=pr]:hover span:after {
+
+  content: url('../img/lt/orange-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=co]:hover span:after {
+
+  content: url('../img/lt/red-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=cr]:hover span:after {
+
+  content: url('../img/lt/black-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+
+
+.btn-group .button {
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    background-color: gray; /* Green */
+    border: 1px black;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    display: block;
+    size: 20px;
+    cursor: pointer;
+    width: 10%;
+    z-index: 1;
+    border-radius: 3px;
+
+}
+
+.btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+    color:black;
+    background-color: #ddd;
+    transition: 1s;
+}
 
 
 
