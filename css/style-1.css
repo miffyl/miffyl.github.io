@@ -8,6 +8,8 @@ margin: 0;
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
 }
+
+
 .div2 {
     border: 1px solid black;
     height:100%;
@@ -20,14 +22,40 @@ margin: 0;
 }
 .header {
     text-align: center;
-    padding: 20px;
+    padding: 2%;
 }
+
+.btn-group a {
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    background-color: gray; /* Green */
+    border: 1px black;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    size: 20px;
+    cursor: pointer;
+    width: 9%;
+    z-index: 1;
+    border-radius: 3px;
+
+
+}
+
+.btn-group a:hover {
+    color:black;
+    background-color: #ddd;
+    transition: 1s;
+}
+
 /* The navbar container */
 .topnav {
     overflow: hidden;
     background-color: #333;
     opacity: 0.85;
-
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -56,6 +84,7 @@ margin: 0;
     padding-right: 2%;
 }
 
+/*[attribute="value"] is the css selector*/
 
 a[target=hm]:hover span:after {
 
@@ -152,7 +181,7 @@ a[target=co]:hover span:after {
 
 
 }
-a[target=cr]:hover span:after {
+a[alt=cr]:hover span:after {
 
   content: url('../img/lt/black-t.png');
   zoom: 2.5%;
@@ -166,33 +195,8 @@ a[target=cr]:hover span:after {
 }
 
 
-.btn-group .button {
-    position: fixed;
-    right: 0;
-    bottom: 5%;
-    background-color: gray; /* Green */
-    border: 1px black;
-    color: white;
-    padding: 1%;
-    text-align: center;
-    display: block;
-    size: 20px;
-    cursor: pointer;
-    width: 10%;
-    z-index: 1;
-    border-radius: 3px;
 
-}
 
-.btn-group .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-}
-
-.btn-group .button:hover {
-    color:black;
-    background-color: #ddd;
-    transition: 1s;
-}
 
 
 
