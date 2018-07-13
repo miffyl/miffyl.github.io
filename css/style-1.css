@@ -39,7 +39,6 @@ margin: 0;
     background-color: #333;
     opacity: 0.85;
     transition: all 0.5s;
-    cursor: pointer;
 }
 
 /* Navbar links */
@@ -185,8 +184,9 @@ a[alt=cr]:hover span:after {
 
 /* Left and right column */
 .column.side {
-    width: 31.3%;
-    float: left;
+    width: 20.2%;
+    margin-left: 11.1%;
+    border-radius: 2px;
 }
 
 /* Middle column */
@@ -205,6 +205,7 @@ a[alt=cr]:hover span:after {
 @media screen and (max-width: 600px) {
     .column.side, .column.middle {
         width: 100%;
+        margin: 0px;
     }
     .topnav a {
     	padding: 1% 1%;
