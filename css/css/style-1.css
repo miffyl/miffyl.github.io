@@ -1,0 +1,264 @@
+body{
+margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 2%;
+}
+
+.btn-group a {
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    background-color: gray; /* Green */
+    border: 1px black;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    size: 20px;
+    cursor: pointer;
+    width: 9%;
+    z-index: 1;
+    border-radius: 3px;
+
+
+}
+
+.btn-group a:hover {
+    color:black;
+    background-color: #ddd;
+    transition: 0.6s;
+}
+
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.85;
+    transition: all 0.5s;
+}
+
+/* Navbar links */
+.topnav a{
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1%;
+    width: 9.09%;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    padding-left: 0%;
+    padding-right: 2%;
+}
+
+/*[attribute="value"] is the css selector*/
+
+a[target=hm]:hover span:after {
+
+  content: url('../img/lt/white-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+}
+
+a[target=dn]:hover span:after {
+
+  content: url('../img/lt/cyan-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=ar]:hover span:after {
+
+  content: url('../img/lt/pink-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=bw]:hover span:after {
+
+  content: url('../img/lt/blue-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=am]:hover span:after {
+
+  content: url('../img/lt/green-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=fp]:hover span:after {
+
+  content: url('../img/lt/yellow-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=pr]:hover span:after {
+
+  content: url('../img/lt/orange-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[target=co]:hover span:after {
+
+  content: url('../img/lt/red-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+a[alt=cr]:hover span:after {
+
+  content: url('../img/lt/black-t.png');
+  zoom: 2.5%;
+  top: 9.09%*0.5;
+  margin-right:10%;
+  opacity: 1;
+  right: 0;
+  position: absolute;
+
+
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 1%;
+    background-color: white;
+    opacity: 0.9;
+}
+
+/* Left and right column */
+.column.side {
+    width: 20.2%;
+    margin-left: 11.1%;
+    border-radius: 2px;
+}
+
+/* Middle column */
+.column.middle {
+    width: 53.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+        margin: 0px;
+    }
+    .topnav a {
+    	padding: 1% 1%;
+    	width: 31%;
+    }
+    .div2{
+        background-size: cover;
+    }
+}
+.footer {
+    background-color: #F1F1F1;
+    opacity: 0.6;
+    text-align: center;
+    padding: 10px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid black;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+    border: 5px solid #777;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0.6px;
+    float: left;
+    width: 50%%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
